@@ -94,3 +94,20 @@
         padding: 22px;
     }
 }
+
+/* Override shared page background for Q&A page */
+body {
+    background: linear-gradient(180deg, #040814 0%, #111827 100%);
+    background-attachment: scroll;
+}
+
+body::before {
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.07), transparent 14%),
+        radial-gradient(circle at 85% 10%, rgba(255, 255, 255, 0.04), transparent 9%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85));
+}
+
+body::after {
+    display: none !important;
+}
